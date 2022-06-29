@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      for ( var i = 1; i <= 100; i++ )
+      {
+        if ( i%3 == 0 && i%5 == 0 )
+        {
+          console.log(" FizzBuzz");
+        }
+        else if ( i%3 == 0 ) 
+        {
+          console.log(" Fizz");
+        }
+        else if ( i%5 == 0 ) 
+        {
+          console.log(" Buzz");
+        }
+        else
+        {
+          console.log(i);
+        }
+      }
+      var sum = 0;
+          for (var x = 0; x < 1000; x++)
+          {
+              if (x % 3 === 0 && x % 5 === 0)
+              {
+                 sum += x;
+              }
+          }
+          console.log(sum);
+      for (var x=0; x<=20; x++) {
+          if (x % 2 === 0) {
+              console.log(x + " is even");   
+          }
+          else {
+              console.log(x + " is odd");
+          }
+      }
+
+
+      var num = [-2, 4, -5, 6, 0];
+      var largest= 0;
+      for (var i=0; i<num.length;i++){
+         if (num[i]>largest) {
+             var largest=num[i];
+          }
+      }
+      console.log(largest);
+
+      function large(){
+        var x = 10
+        var y = 40
+
+        if(x<y){
+          console.log("10 is greater")
+        }
+        else{
+          console.log("40 is greater")
+        }
+      }
+      large()
+
+      function leap_year_checker(){
+        for (var n = 2000; n<=2022;n++){
+          if(n%4==0)
+          console.log(n+"was a leap year between 2000 and 2022","\n")
+        }
+      }
+      leap_year_checker()
+    </script>
+</body>
+</html>
