@@ -8,26 +8,33 @@
 </head>
 <body>
     <script>
-      for ( var i = 1; i <= 100; i++ )
-      {
-        if ( i%3 == 0 && i%5 == 0 )
-        {
-          console.log(" FizzBuzz");
-        }
-        else if ( i%3 == 0 ) 
-        {
-          console.log(" Fizz");
-        }
-        else if ( i%5 == 0 ) 
-        {
-          console.log(" Buzz");
-        }
-        else
-        {
-          console.log(i);
+      function multiples(){
+        for ( var i = 1; i <= 100; i++ )
+       {
+          if ( i%3 == 0 && i%5 == 0 )
+          {
+            console.log(" FizzBuzz");
+          }
+          else if ( i%3 == 0 ) 
+          {
+            console.log(" Fizz");
+          }
+          else if ( i%5 == 0 ) 
+          {
+            console.log(" Buzz");
+          }
+          else
+          {
+            console.log(i);
+          }
         }
       }
-      var sum = 0;
+      multiples()
+
+
+
+      function sum(){
+        var sum = 0;
           for (var x = 0; x < 1000; x++)
           {
               if (x % 3 === 0 && x % 5 === 0)
@@ -36,25 +43,40 @@
               }
           }
           console.log(sum);
-      for (var x=0; x<=20; x++) {
+      }
+      sum()
+
+
+
+      function large_number(){
+        for (var x=0; x<=20; x++) {
           if (x % 2 === 0) {
               console.log(x + " is even");   
           }
           else {
               console.log(x + " is odd");
           }
+        }
       }
+      large_number()
 
 
-      var num = [-2, 4, -5, 6, 0];
-      var largest= 0;
-      for (var i=0; i<num.length;i++){
+
+      function largest_numb(){
+        var num = [-2, 4, -5, 6, 0];
+        var largest= 0;
+        for (var i=0; i<num.length;i++){
          if (num[i]>largest) {
              var largest=num[i];
           }
-      }
-      console.log(largest);
+        }
+       console.log(largest);
 
+      }
+      largest_numb()
+
+
+      
       function large(){
         var x = 10
         var y = 40
@@ -68,6 +90,8 @@
       }
       large()
 
+
+
       function leap_year_checker(){
         for (var n = 2000; n<=2022;n++){
           if(n%4==0)
@@ -75,6 +99,8 @@
         }
       }
       leap_year_checker()
+
+      
     </script>
 </body>
 </html>
